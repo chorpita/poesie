@@ -3,7 +3,7 @@ three poetry generators developed in VC6 (Visual C++ 6.0)
 
 This is the C++ source code for three poetry generation algorithms.
 
-These were the subject of my book:
+These are the the main subject of my book, written in German language, published in 2007:
 
 Diesseits und jenseits des Hirsches: Die Entstehung einer Poesiemaschine
 
