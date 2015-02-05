@@ -1,0 +1,10 @@
+---------BEGIN TITLE REPORT-------- 
+------------END TITLE REPORT--------------
+Total Segments(0)
+---------BEGIN TEXT REPORT-------- 
+Form("this is some cool data and why can't it get it together."), Usage(1)
+Form("<ia> man in my position is likely to see the charm of tomorrow."), Usage(1)
+Form("this is <ia> sentence that needs to be done properly with sentences."), Usage(1)
+Form("I am <ia> cool guy and my name is douglas."), Usage(1)
+------------END TEXT REPORT------------
+Total Segments(4)

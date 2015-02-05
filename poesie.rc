@@ -1,0 +1,784 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\poesie.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\poesie.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_POESIE_DIALOG DIALOGEX 0, 0, 597, 431
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Poesiemaschine 2.02"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Weiter",ID_CONTINUE,34,2,30,14
+    DEFPUSHBUTTON   "Compiler...",ID_OPTIONS,155,2,40,14
+    LTEXT           "<poem>",IDC_POEM,4,19,590,409,SS_SUNKEN | WS_BORDER
+    DEFPUSHBUTTON   "Neu",ID_NEWPOEM,8,2,24,14
+    DEFPUSHBUTTON   "Wörterbuch...",ID_DICTIONARY,516,2,48,14
+    DEFPUSHBUTTON   "Info...",ID_ABOUT,432,2,23,14
+    DEFPUSHBUTTON   "Debug",ID_REPAIR,482,2,31,14
+    DEFPUSHBUTTON   "Gedicht",ID_MAKEPOEM,66,2,34,14
+    DEFPUSHBUTTON   "Lex-Brain...",ID_WORDNET,197,2,40,14
+    DEFPUSHBUTTON   "Syntax...",ID_SYNTAX,239,2,38,14
+    DEFPUSHBUTTON   "IPA-Form...",ID_IPATRANS,279,2,42,14
+    DEFPUSHBUTTON   "Importieren...",ID_CMUIMPORT,379,2,51,14
+    DEFPUSHBUTTON   "Lesen",ID_READ,567,2,25,14
+    DEFPUSHBUTTON   "IPA-Gedicht...",ID_IPAPOEM,323,2,54,14
+    DEFPUSHBUTTON   "Speichern...",ID_SAVEAS,102,2,51,14
+END
+
+IDD_OPTIONS_DIALOG DIALOGEX 0, 0, 279, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Compiler"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,223,20,47,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,223,39,47,14
+    COMBOBOX        IDC_COMPILER,76,19,131,46,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,5,2,210,63
+    PUSHBUTTON      "compilerspezifische Einstellungen...",ID_COMPILEROPTS,
+                    78,41,123,14
+    CONTROL         153,IDC_STATIC,"Static",SS_BITMAP,9,8,59,54
+    LTEXT           "Compiler:",IDC_STATIC,78,9,70,8,SS_NOPREFIX
+END
+
+IDD_DICTIONARY_DIALOG DIALOGEX 0, 0, 306, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Wörterbuch"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Schließen",IDOK,249,106,49,14
+    PUSHBUTTON      "Neu...",ID_NEWWORD,249,6,49,14
+    PUSHBUTTON      "Bearbeiten...",ID_EDITWORD,249,46,49,14
+    PUSHBUTTON      "Entfernen",ID_DELETEWORD,249,26,49,14
+    LISTBOX         IDC_WORDLIST,6,15,107,203,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Wörterverzeichnis:",IDC_STATIC,6,3,65,8
+    GROUPBOX        "Wortform-Informationen",IDC_STATIC,119,130,180,85
+    PUSHBUTTON      "Phonetische Gesamtdarstellung...",ID_PHONEBOX,148,193,
+                    123,14
+    LTEXT           "Angabe:",IDC_STATIC,149,145,27,8
+    LTEXT           "",ST_LEXENTRY,187,145,100,8
+    LTEXT           "Wortart:",IDC_STATIC,151,175,27,8
+    LTEXT           "",ST_WORDTYPE,185,175,105,8
+    LTEXT           "Schreibweise:",IDC_STATIC,132,160,47,8
+    LTEXT           "",ST_WORDBODY,187,160,95,8
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP,120,7,123,115
+    PUSHBUTTON      "Info...",ID_LEXBOX,249,86,49,14,WS_DISABLED
+    PUSHBUTTON      "Importieren...",ID_IMPORT,249,66,49,14,WS_DISABLED
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Info über Poesiemaschine"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,13,20,20
+    LTEXT           "Poesiemaschine - Version 2.02",IDC_STATIC,40,19,119,9,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 2005",IDC_STATIC,39,56,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,15,50,14,WS_GROUP
+    LTEXT           "Douglas Michael Chorpita Software, GmbH",IDC_STATIC,40,
+                    36,141,8,SS_NOPREFIX
+    LTEXT           "Frankfurt am Main, New York, São Paulo",IDC_STATIC,40,
+                    46,159,8,SS_NOPREFIX
+    CONTROL         151,IDC_STATIC,"Static",SS_BITMAP,22,73,192,66
+END
+
+IDD_IPA_DIALOG DIALOGEX 0, 0, 262, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IPA-Transkription einer Wortform"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Wortform:",IDC_STATIC,81,9,51,8
+    EDITTEXT        IDC_WORDTEXT,81,22,97,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Schließen",IDOK,195,28,58,14
+    PUSHBUTTON      "Transkription...",ID_IPATRANS,195,9,58,14
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP,9,8,59,34
+END
+
+IDD_SILBE_PHONE_DIALOG DIALOGEX 0, 0, 207, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 16, "Times New Roman Phonetics"
+BEGIN
+    GROUPBOX        "phonetische darstellung",IDC_STATIC,11,0,129,34
+    EDITTEXT        IDC_PHONETEXT,37,14,36,12,ES_AUTOHSCROLL
+    GROUPBOX        "phonetisches",IDC_STATIC,144,0,54,34
+    LTEXT           "filter:",IDC_STATIC,147,8,46,8
+    COMBOBOX        IDC_SILBEFILTER,147,17,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "konsonanten",IDC_STATIC,11,34,187,44
+    GROUPBOX        "",IDC_STATIC,17,38,45,38
+    GROUPBOX        "",IDC_STATIC,65,38,75,38
+    GROUPBOX        "",IDC_STATIC,143,38,51,38
+    PUSHBUTTON      "ok",IDOK,149,138,49,14
+    PUSHBUTTON      "abbrechen",IDCANCEL,149,154,49,14
+    PUSHBUTTON      "A",ID_SILBE4,118,148,10,14
+    GROUPBOX        "vokale",IDC_STATIC,11,80,132,87
+    PUSHBUTTON      "E",ID_SILBE6,46,132,9,14
+    PUSHBUTTON      "I",ID_SILBE7,67,107,7,14
+    PUSHBUTTON      "O",ID_SILBE8,129,132,9,14
+    PUSHBUTTON      "U",ID_SILBE9,105,107,9,14
+    PUSHBUTTON      "a",ID_SILBE10,76,148,9,14
+    PUSHBUTTON      "e",ID_SILBE11,46,117,9,14
+    PUSHBUTTON      "i",ID_SILBE12,48,101,7,14
+    PUSHBUTTON      "o",ID_SILBE13,128,117,10,14
+    PUSHBUTTON      "u",ID_SILBE14,128,101,10,14
+    PUSHBUTTON      "&&",ID_SILBE15,51,148,11,14
+    PUSHBUTTON      "@",ID_SILBE16,95,125,9,14
+    PUSHBUTTON      "V",ID_SILBE17,118,132,9,14
+    LTEXT           "vorn",IDC_STATIC,50,89,17,8
+    LTEXT           "hinter",IDC_STATIC,115,89,21,8
+    LTEXT           "zentral",IDC_STATIC,81,89,24,8
+    GROUPBOX        "",IDC_STATIC,46,83,93,16
+    GROUPBOX        "",IDC_STATIC,14,97,29,67
+    LTEXT           "hoch",IDC_STATIC,19,105,18,8
+    LTEXT           "mittel",IDC_STATIC,19,128,20,8
+    LTEXT           "niedrig",IDC_STATIC,16,151,25,8
+    PUSHBUTTON      "y",ID_SILBE18,57,101,9,14,WS_DISABLED
+    PUSHBUTTON      "{",ID_SILBE19,56,117,10,14,WS_DISABLED
+    PUSHBUTTON      "Y",ID_SILBE20,75,107,9,14,WS_DISABLED
+    PUSHBUTTON      "9",ID_SILBE21,56,132,11,14,WS_DISABLED
+    PUSHBUTTON      "M",ID_SILBE22,116,101,11,14,WS_DISABLED
+    PUSHBUTTON      "3",ID_SILBE23,84,132,9,14
+    PUSHBUTTON      "6",ID_SILBE24,95,141,9,14
+    PUSHBUTTON      "È",ID_SILBE25,85,101,9,14,WS_DISABLED
+    PUSHBUTTON      "Ë",ID_SILBE26,95,101,9,14,WS_DISABLED
+    PUSHBUTTON      "Q",ID_SILBE27,129,148,9,14,WS_DISABLED
+    PUSHBUTTON      "p",ID_SILBE28,20,44,9,14
+    PUSHBUTTON      "b",ID_SILBE29,20,59,9,14
+    PUSHBUTTON      "t",ID_SILBE30,31,44,8,14
+    PUSHBUTTON      "d",ID_SILBE31,30,59,9,14
+    PUSHBUTTON      "k",ID_SILBE32,41,44,9,14
+    PUSHBUTTON      "g",ID_SILBE33,41,59,9,14
+    PUSHBUTTON      "?",ID_SILBE34,51,44,8,14
+    PUSHBUTTON      "m",ID_SILBE35,145,45,11,14
+    PUSHBUTTON      "n",ID_SILBE36,157,45,9,14
+    PUSHBUTTON      "N",ID_SILBE37,167,45,9,14
+    PUSHBUTTON      "R",ID_SILBE39,174,60,8,14
+    PUSHBUTTON      "r",ID_SILBE40,145,60,8,14,WS_DISABLED
+    PUSHBUTTON      "4",ID_SILBE41,155,60,8,14,WS_DISABLED
+    PUSHBUTTON      "K",ID_SILBE42,164,60,9,14,WS_DISABLED
+    PUSHBUTTON      "C",ID_SILBE43,108,44,8,14,WS_DISABLED
+    PUSHBUTTON      "D",ID_SILBE44,78,59,9,14
+    PUSHBUTTON      "S",ID_SILBE45,99,44,8,14
+    PUSHBUTTON      "T",ID_SILBE46,78,44,9,14
+    PUSHBUTTON      "Z",ID_SILBE47,99,59,8,14
+    PUSHBUTTON      "f",ID_SILBE48,68,44,8,14
+    PUSHBUTTON      "v",ID_SILBE49,67,59,9,14
+    PUSHBUTTON      "w",ID_SILBE50,151,90,10,14
+    PUSHBUTTON      "h",ID_SILBE51,128,44,9,14
+    PUSHBUTTON      "s",ID_SILBE52,89,44,8,14
+    PUSHBUTTON      "j",ID_SILBE53,164,90,7,14
+    PUSHBUTTON      "l",ID_SILBE54,184,45,7,14
+    PUSHBUTTON      "z",ID_SILBE55,89,59,8,14
+    PUSHBUTTON      "x",ID_SILBE56,117,44,9,14,WS_DISABLED
+    PUSHBUTTON      "G",ID_SILBE58,117,59,9,14,WS_DISABLED
+    GROUPBOX        "gleitlaute",IDC_STATIC,148,80,50,28
+    PUSHBUTTON      "H",ID_SILBE57,174,90,9,14,WS_DISABLED
+    GROUPBOX        "langer vokal",IDC_STATIC,148,108,50,28
+    PUSHBUTTON      ";",ID_SILBE59,153,118,40,14
+END
+
+IDD_PHONEBOX DIALOG DISCARDABLE  0, 0, 108, 27
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IPA-Transkription"
+FONT 20, "Times New Roman Phonetics"
+BEGIN
+    DEFPUSHBUTTON   "ok",IDOK,41,16,27,9,WS_GROUP
+    CTEXT           "",IDC_PHONEDISPLAY,7,4,94,11
+END
+
+IDD_SILBE_DIALOG DIALOGEX 0, 0, 201, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,143,10,49,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,143,26,49,14
+    CONTROL         "betont",IDC_TONE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,27,38,10
+    CONTROL         "flexibel bei Betonung",IDC_FLEXIBLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,55,27,86,10
+    PUSHBUTTON      "Phonetische Darstellung...",ID_SILBE_PHONE,9,8,91,14
+    EDITTEXT        IDC_BREAKDISPLAY,52,49,85,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    GROUPBOX        "Silbentrennung",IDC_BREAKGROUP,6,38,138,30,WS_DISABLED
+    PUSHBUTTON      ">",IDC_BREAKPLUS,32,49,12,14,WS_DISABLED
+    PUSHBUTTON      "<",IDC_BREAKMINUS,14,49,12,14,WS_DISABLED
+END
+
+IDD_WRD_DIALOG DIALOGEX 0, 0, 205, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Schreibweise:",IDC_STATIC,14,7,51,8
+    EDITTEXT        IDC_WORDTEXT,13,18,98,12,ES_AUTOHSCROLL
+    LTEXT           "Wortart:",IDC_STATIC,117,6,34,8
+    COMBOBOX        IDC_WORDTYPE,116,18,67,108,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Pluralform",IDC_PLURAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,35,62,10
+    LTEXT           "Genus:",ST_GENDER,120,33,34,8
+    COMBOBOX        IDC_GENDER,117,44,67,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Silbendaten",IDC_STATIC,8,62,183,31
+    LTEXT           "Silbenzahl:",IDC_STATIC,13,76,38,8
+    EDITTEXT        IDC_NUMSILBEN,55,73,11,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "1. Silbe...",ID_SILBE1,71,73,36,14
+    PUSHBUTTON      "2...",ID_SILBE2,111,73,15,14
+    PUSHBUTTON      "3...",ID_SILBE3,130,73,15,14
+    PUSHBUTTON      "4...",ID_SILBE4,149,73,15,14
+    PUSHBUTTON      "5...",ID_SILBE5,168,73,15,14
+    GROUPBOX        "",IDC_STATIC,8,97,142,49
+    CONTROL         "versteckt",IDC_HIDDEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,114,46,10
+    LTEXT           "Zusatztext:",IDC_STATIC,74,103,38,8
+    EDITTEXT        IDC_EXTRATEXT,74,112,37,12,ES_AUTOHSCROLL
+    LTEXT           "Code:",IDC_STATIC,118,103,20,8
+    EDITTEXT        IDC_WORDCODE,119,112,28,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Phonetische Gesamtdarstellung...",ID_PHONEBOX,17,128,
+                    123,14
+    PUSHBUTTON      "OK",IDOK,154,105,39,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,153,123,41,14
+    CONTROL         "mehrdeutig",IDC_AMBIG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,103,53,10
+    CONTROL         "verwendet ""an""",IDC_TAKESAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,48,62,10
+END
+
+IDD_IMPORT_DIALOG DIALOGEX 0, 0, 262, 261
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Importieren"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "CMU-Artikulationswörterbuch-Textdatei 'CMU.DAT' in IPA-Binärdatei 'ENG-US.IPA' übersetzen.",
+                    IDC_STATIC,16,53,164,16
+    PUSHBUTTON      "Schließen",IDOK,196,238,58,14
+    PUSHBUTTON      "Importieren",ID_CMUIMPORT,184,54,58,14
+    GROUPBOX        "CMU-Wörterbuch",IDC_STATIC,8,3,246,71
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP,21,15,59,34
+    LTEXT           "Inaktiv",IDC_CMUMESSAGE,102,26,125,8
+    GROUPBOX        "Status",IDC_STATIC,92,12,149,33
+    LTEXT           "Textdatei 'CORE.TXT' in Binärdatei 'ENG-US.COR' übersetzen.",
+                    IDC_STATIC,17,131,157,16
+    PUSHBUTTON      "Importieren",ID_COMMONIMPORT,184,133,58,14
+    GROUPBOX        "Grundform-Wörterbuch",IDC_STATIC,8,80,246,73
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,21,92,59,34
+    GROUPBOX        "Status",IDC_STATIC,92,89,149,33
+    LTEXT           "Inaktiv",IDC_COREMESSAGE,104,104,125,8
+    LTEXT           "Textdateien 'EXC_A.DAT', 'EXC_N.DAT' und 'EXC_V.DAT' in Binärdatei 'ENG-US.AFW' übersetzen.",
+                    IDC_STATIC,17,204,154,26
+    PUSHBUTTON      "Importieren",ID_EXCIMPORT,184,208,58,14
+    GROUPBOX        "Ausnahme-Wörterbuch",IDC_STATIC,8,155,246,76
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,21,167,59,34
+    GROUPBOX        "Status",IDC_STATIC,92,164,149,33
+    LTEXT           "Inaktiv",IDC_EXCMESSAGE,104,179,125,8
+END
+
+IDD_SYNTAX_DIALOG DIALOGEX 0, 0, 262, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Syntax"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Ausgewählte Textdatei wird verarbeitet, um zusätzliche Syntagmen herzustellen.",
+                    IDC_STATIC,16,53,138,16
+    PUSHBUTTON      "Schließen",IDOK,196,150,58,14
+    PUSHBUTTON      "Syntagmen taggen...",ID_GENERATE,161,54,81,14
+    GROUPBOX        "Syntagmen herstellen",IDC_STATIC,7,3,249,71
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP,18,15,59,34
+    LTEXT           "Dateiname:",IDC_STATIC,162,20,54,8
+    GROUPBOX        "Textdatei auswahlen",IDC_STATIC,87,11,162,36
+    GROUPBOX        "Syntagma ändern",IDC_STATIC,6,77,250,70
+    EDITTEXT        IDC_SYNTAGMA_INDEX,35,106,29,14,ES_AUTOHSCROLL
+    LTEXT           "Index:",IDC_STATIC,13,108,20,8
+    EDITTEXT        IDC_SYNTAGMA_EDIT,74,87,174,53,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "Inhalt:",IDC_STATIC,53,88,20,8
+    PUSHBUTTON      "Ändern",IDC_SYNTAGMA_CHG,15,125,50,14
+    PUSHBUTTON      "Durchsuchen...",ID_FILEFIND,94,24,59,14
+    LTEXT           "keine Datei ausgewählt",IDC_SYN_FILENAME,162,31,79,12,
+                    SS_SUNKEN
+    CONTROL         "Titelsyntagmen",IDC_SYN_TITLES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,31,152,68,10
+END
+
+IDD_WORDNET_DIALOG DIALOGEX 0, 0, 262, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Lex-Brain mit WordNet"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Schließen",IDOK,196,90,58,14
+    PUSHBUTTON      "Semantisches Netz herstellen",ID_GENERATE,25,55,111,14
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,157,7,99,78
+    LTEXT           "Root Words",IDC_STATIC,8,7,40,8
+    EDITTEXT        IDC_ROOTWORD,51,4,102,43,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "",IDC_WORDNETRESULT,84,76,59,8
+    RTEXT           "Anzahl der Wörter:",IDC_STATIC,17,76,60,8
+    PUSHBUTTON      "Semantisches Netz zeigen...",ID_SEM_SHOW,25,91,111,14
+END
+
+IDD_POS_DIALOG DIALOGEX 0, 0, 320, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Syntagmen taggen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Wortform:",IDC_STATIC,13,4,32,8
+    LTEXT           "",IDC_POS_WORD,53,4,180,8
+    LTEXT           "Syntagma:",IDC_STATIC,10,17,34,8
+    LTEXT           "",IDC_POS_SYNTAG,51,16,259,33,WS_BORDER
+    PUSHBUTTON      "boy",IDC_SYN_N,14,61,39,14
+    PUSHBUTTON      "boys",IDC_SYN_NP,14,82,39,14
+    GROUPBOX        "Substantiv",IDC_STATIC,8,51,51,69
+    GROUPBOX        "Verb",IDC_STATIC,63,51,88,69
+    PUSHBUTTON      "know",IDC_SYN_V,70,61,34,14
+    PUSHBUTTON      "knows",IDC_SYN_VS,70,81,34,14
+    PUSHBUTTON      "knowing",IDC_SYN_VG,70,101,34,14
+    PUSHBUTTON      "knew",IDC_SYN_VA,111,61,34,14
+    PUSHBUTTON      "known",IDC_SYN_VP,111,81,34,14
+    GROUPBOX        "Adjektiv",IDC_STATIC,154,51,50,69
+    PUSHBUTTON      "bright",IDC_SYN_A,161,61,35,14
+    PUSHBUTTON      "brighter",IDC_SYN_AC,161,81,35,14
+    PUSHBUTTON      "brightest",IDC_SYN_AS,162,100,35,14
+    GROUPBOX        "Adverb",IDC_STATIC,208,51,43,30
+    PUSHBUTTON      "brightly",IDC_SYN_R,213,60,34,14
+    PUSHBUTTON      "Annehmen",IDIGNORE,262,61,45,14
+    PUSHBUTTON      "Löschen",IDNO,262,80,45,14
+    GROUPBOX        "Optionen",IDC_STATIC,256,51,58,69
+    PUSHBUTTON      "Abbrechen",IDCANCEL,262,99,45,14
+END
+
+IDD_IPAPOEM_DIALOG DIALOGEX 0, 0, 288, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "IPA-Transkription des Gedichts"
+FONT 16, "Times New Roman Phonetics"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,0,272,213
+    EDITTEXT        IDC_IPAPOEM,6,4,273,209,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_WORMOPTIONS_DIALOG DIALOGEX 0, 0, 279, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Einstellungen des Worm-Compilers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Struktur",-1,6,4,268,38
+    LTEXT           "Gedichtsform:",-1,15,15,45,8
+    COMBOBOX        IDC_POEMFORM,63,13,102,46,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Strophenzahl:",IDC_ST_STANZAS,169,14,47,8
+    EDITTEXT        IDC_NUMSTANZAS,218,13,13,12,ES_AUTOHSCROLL
+    LTEXT           "Strophenlänge:",-1,11,27,49,8
+    COMBOBOX        IDC_STANZALENGTH,63,25,95,42,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Verszahl:",IDC_ST_VERSES,169,28,33,8
+    EDITTEXT        IDC_NUMVERSE,205,26,11,12,ES_AUTOHSCROLL
+    CONTROL         "mit Titel",IDC_HASTITLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,232,29,40,10
+    PUSHBUTTON      "OK",IDOK,229,86,44,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,229,105,44,14
+    GROUPBOX        "Metrik",-1,6,43,268,38
+    CONTROL         "mit Endreim",IDC_HASTITLE2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,52,53,10
+    COMBOBOX        IDC_REIMTYPE,118,51,102,46,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Reimschema:",-1,70,53,45,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MFC-Anwendung poesie\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "poesie\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "poesie.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Anwendung poesie\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_POESIE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 426
+    END
+
+    IDD_OPTIONS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_DICTIONARY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_IPA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_SILBE_PHONE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_PHONEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 101
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 22
+    END
+
+    IDD_SILBE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_WRD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_IMPORT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_SYNTAX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_WORDNET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_POS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_IPAPOEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_WORMOPTIONS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OPTIONS_DIALOG DLGINIT
+BEGIN
+    IDC_COMPILER, 0x403, 14, 0
+0x7557, 0x6d72, 0x432d, 0x6d6f, 0x6970, 0x656c, 0x0072, 
+    IDC_COMPILER, 0x403, 18, 0
+0xe448, 0x6e68, 0x6863, 0x6e65, 0x432d, 0x6d6f, 0x6970, 0x656c, 0x0072, 
+
+    IDC_COMPILER, 0x403, 16, 0
+0x6948, 0x7372, 0x6863, 0x432d, 0x6d6f, 0x6970, 0x656c, 0x0072, 
+    0
+END
+
+IDD_SILBE_PHONE_DIALOG DLGINIT
+BEGIN
+    IDC_SILBEFILTER, 0x403, 12, 0
+0x656b, 0x6e69, 0x6620, 0x6c69, 0x6574, 0x0072, 
+    IDC_SILBEFILTER, 0x403, 8, 0
+0x6564, 0x7475, 0x6373, 0x0068, 
+    IDC_SILBEFILTER, 0x403, 9, 0
+0x6e65, 0x6c67, 0x7369, 0x6863, "\000" 
+    0
+END
+
+IDD_WRD_DIALOG DLGINIT
+BEGIN
+    IDC_WORDTYPE, 0x403, 9, 0
+0x6441, 0x656a, 0x746b, 0x7669, "\000" 
+    IDC_WORDTYPE, 0x403, 7, 0
+0x6441, 0x6576, 0x6272, "\000" 
+    IDC_WORDTYPE, 0x403, 13, 0
+0x6544, 0x6574, 0x6d72, 0x6e69, 0x7461, 0x726f, "\000" 
+    IDC_WORDTYPE, 0x403, 10, 0
+0x6945, 0x6567, 0x6e6e, 0x6d61, 0x0065, 
+    IDC_WORDTYPE, 0x403, 13, 0
+0x7246, 0x6761, 0x6665, 0x72fc, 0x6f77, 0x7472, "\000" 
+    IDC_WORDTYPE, 0x403, 13, 0
+0x6e49, 0x6574, 0x6a72, 0x6b65, 0x6974, 0x6e6f, "\000" 
+    IDC_WORDTYPE, 0x403, 12, 0
+0x6f4b, 0x6a6e, 0x6e75, 0x746b, 0x6f69, 0x006e, 
+    IDC_WORDTYPE, 0x403, 12, 0
+0x7250, 0x70e4, 0x736f, 0x7469, 0x6f69, 0x006e, 
+    IDC_WORDTYPE, 0x403, 9, 0
+0x7250, 0x6e6f, 0x6d6f, 0x6e65, "\000" 
+    IDC_WORDTYPE, 0x403, 11, 0
+0x7553, 0x7362, 0x6174, 0x746e, 0x7669, "\000" 
+    IDC_WORDTYPE, 0x403, 5, 0
+0x6556, 0x6272, "\000" 
+    IDC_GENDER, 0x403, 9, 0
+0xe473, 0x6863, 0x696c, 0x6863, "\000" 
+    IDC_GENDER, 0x403, 9, 0
+0xe46d, 0x6e6e, 0x696c, 0x6863, "\000" 
+    IDC_GENDER, 0x403, 9, 0
+0x6577, 0x6269, 0x696c, 0x6863, "\000" 
+    0
+END
+
+IDD_WORMOPTIONS_DIALOG DLGINIT
+BEGIN
+    IDC_POEMFORM, 0x403, 39, 0
+0x6945, 0x676e, 0x7465, 0x6172, 0x6567, 0x656e, 0x5320, 0x7274, 0x706f, 
+0x6568, 0x7a6e, 0x6861, 0x206c, 0x2020, 0x2020, 0x2020, 0x2020, 0x2020, 
+0x2020, "\000" 
+    IDC_POEMFORM, 0x403, 23, 0
+0x755a, 0xe466, 0x6c6c, 0x6769, 0x2065, 0x7453, 0x6f72, 0x6870, 0x6e65, 
+0x617a, 0x6c68, "\000" 
+    IDC_POEMFORM, 0x403, 8, 0
+0x6f53, 0x6e6e, 0x7465, 0x0074, 
+    IDC_POEMFORM, 0x403, 6, 0
+0x6148, 0x6b69, 0x0075, 
+    IDC_STANZALENGTH, 0x403, 22, 0
+0x6945, 0x676e, 0x7465, 0x6172, 0x6567, 0x656e, 0x5620, 0x7265, 0x7a73, 
+0x6861, 0x006c, 
+    IDC_STANZALENGTH, 0x403, 19, 0
+0x755a, 0xe466, 0x6c6c, 0x6769, 0x2065, 0x6556, 0x7372, 0x617a, 0x6c68, 
+"\000" 
+    IDC_REIMTYPE, 0x403, 9, 0
+0x6150, 0x7261, 0x6572, 0x6d69, "\000" 
+    IDC_REIMTYPE, 0x403, 10, 0
+0x724b, 0x7565, 0x727a, 0x6965, 0x006d, 
+    IDC_REIMTYPE, 0x403, 10, 0
+0x6c42, 0x636f, 0x726b, 0x6965, 0x006d, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DICTIONARY          BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_WORDNET             BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_COMMON              BITMAP  DISCARDABLE     "res\\bitmap3.bmp"
+IDB_SYNTAX              BITMAP  DISCARDABLE     "res\\bitmap4.bmp"
+IDB_IPATRANS            BITMAP  DISCARDABLE     "res\\wordnet.bmp"
+IDB_EXCEPTION           BITMAP  DISCARDABLE     "res\\ipatrans.bmp"
+IDB_IGFH                BITMAP  DISCARDABLE     "res\\igfh.bmp"
+IDB_COMPILER            BITMAP  DISCARDABLE     "res\\compiler.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Inf&o über poesie..."
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\poesie.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.deu\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

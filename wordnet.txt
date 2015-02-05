@@ -1,0 +1,7 @@
+1. reads idx, which contains offset data for various senses.
+
+2. loop for all senses and get the synset for each sense.
+
+3. the "find" code dumps everything into a buffer....create a second version of find...hack it apart to remove undesirable behaviors....
+
+:douglas

@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: poesie - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\windows\TEMP\RSPA270.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/poesie.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Programme\Microsoft Visual Studio\MyProjects\poesie\WordDlg.cpp"
+]
+Creating command line "cl.exe @c:\windows\TEMP\RSPA270.TMP" 
+Creating temporary file "c:\windows\TEMP\RSPA271.TMP" with contents
+[
+../wnnew/Debug/wnnew.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/poesie.pdb" /debug /machine:I386 /out:"Debug/poesie.exe" /pdbtype:sept 
+".\Debug\chicken.obj"
+".\Debug\compile.obj"
+".\Debug\deer.obj"
+".\Debug\deer2.obj"
+".\Debug\DictionaryDlg.obj"
+".\Debug\generic.obj"
+".\Debug\ImportDlg.obj"
+".\Debug\IPADialog.obj"
+".\Debug\IPAPoemDlg.obj"
+".\Debug\lexicon.obj"
+".\Debug\OptionsDlg.obj"
+".\Debug\phonetics.obj"
+".\Debug\poesie.obj"
+".\Debug\poesieDlg.obj"
+".\Debug\poetics.obj"
+".\Debug\POSDlg.obj"
+".\Debug\reader.obj"
+".\Debug\semantic.obj"
+".\Debug\SilbeDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\syntax.obj"
+".\Debug\SyntaxDlg.obj"
+".\Debug\wnbsrch.obj"
+".\Debug\wnmorph.obj"
+".\Debug\wnsearch.obj"
+".\Debug\wnwnglob.obj"
+".\Debug\wnwnhelp.obj"
+".\Debug\wnwnrtl.obj"
+".\Debug\wnwnutil.obj"
+".\Debug\WordDlg.obj"
+".\Debug\WordNetDlg.obj"
+".\Debug\poesie.res"
+]
+Creating command line "link.exe @c:\windows\TEMP\RSPA271.TMP"
+<h3>Output Window</h3>
+Compiling...
+WordDlg.cpp
+Linking...
+Creating temporary file "c:\windows\TEMP\RSPA283.TMP" with contents
+[
+/nologo /o"Debug/poesie.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\chicken.sbr"
+".\Debug\compile.sbr"
+".\Debug\deer.sbr"
+".\Debug\deer2.sbr"
+".\Debug\DictionaryDlg.sbr"
+".\Debug\generic.sbr"
+".\Debug\ImportDlg.sbr"
+".\Debug\IPADialog.sbr"
+".\Debug\IPAPoemDlg.sbr"
+".\Debug\lexicon.sbr"
+".\Debug\OptionsDlg.sbr"
+".\Debug\phonetics.sbr"
+".\Debug\poesie.sbr"
+".\Debug\poesieDlg.sbr"
+".\Debug\poetics.sbr"
+".\Debug\POSDlg.sbr"
+".\Debug\reader.sbr"
+".\Debug\semantic.sbr"
+".\Debug\SilbeDlg.sbr"
+".\Debug\syntax.sbr"
+".\Debug\SyntaxDlg.sbr"
+".\Debug\wnbsrch.sbr"
+".\Debug\wnmorph.sbr"
+".\Debug\wnsearch.sbr"
+".\Debug\wnwnglob.sbr"
+".\Debug\wnwnhelp.sbr"
+".\Debug\wnwnrtl.sbr"
+".\Debug\wnwnutil.sbr"
+".\Debug\WordDlg.sbr"
+".\Debug\WordNetDlg.sbr"]
+Creating command line "bscmake.exe @c:\windows\TEMP\RSPA283.TMP"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+poesie.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
