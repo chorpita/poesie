@@ -1,5 +1,5 @@
 # poesie
-three poetry generators developed in VC6 (Visual C++ 6.0) in 2005.
+three poetry generators developed in VC6 (Microsoft Visual C++ 6.0) in 2005.
 
 This is the C++ source code for three poetry generation algorithms.
 
